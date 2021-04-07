@@ -471,3 +471,23 @@ svg{
 }
 
 /* End About Me Rules */
+
+/* Start Footer Rules */
+
+footer {
+  background: #333333;
+  height: 100px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #238b68;
+}
+
+/* End Footer Rules */
