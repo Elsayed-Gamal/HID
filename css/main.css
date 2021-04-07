@@ -432,6 +432,11 @@ nav ul li a {
   background: #238b68;
 }
 
+#about-me h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
 #about-me .container {
   display: flex;
   justify-content: space-between;
@@ -459,14 +464,13 @@ nav ul li a {
   position: absolute;
   top: 0;
   left: 0;
-
 }
 
 #about-me .container .image {
   width: 50%;
 }
 
-svg{
+svg {
   width: 100%;
 }
 
@@ -482,7 +486,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 70px;
+  padding: 100px;
 }
 
 footer a {
@@ -491,3 +495,72 @@ footer a {
 }
 
 /* End Footer Rules */
+
+/* Start Media Queries Rules */
+
+@media (max-width: 640px) {
+  #skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skills h1 {
+    margin-bottom: 50px;
+  }
+
+  #skills .langs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #skills .bar {
+    display: none;
+  }
+
+  #skills .langs .html,
+  #skills .langs .css,
+  #skills .langs .js {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0 !important;
+    text-align: center;
+    width: 90vw;
+    margin-bottom: 20px;
+  }
+  #skills .langs .html h2,
+  #skills .langs .css h2,
+  #skills .langs .js h2 {
+    text-align: center;
+  }
+
+  #skills .langs .html::after,
+  #skills .langs .css::after,
+  #skills .langs .js::after,
+  #skills .langs .html::before,
+  #skills .langs .css::before,
+  #skills .langs .js::before {
+    display: none;
+  }
+  #portfolio .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  #portfolio .projects .project {
+    width: 80vw;
+  }
+  #about-me .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  #about-me .container .info {
+    width: 100%;
+    margin-left: 0;
+  }
+  #about-me .container .image {
+    display: none;
+  }
+}
+
+/* End Media Queries Rules */
