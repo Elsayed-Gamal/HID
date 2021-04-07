@@ -342,7 +342,7 @@ nav ul li a {
   padding: 5px;
   border: 2px solid #238b68;
   box-shadow: 1px 1px 10px #238b68;
-  margin-top: 20px;
+  margin: 20px 0;
   position: relative;
   cursor: pointer;
   display: flex;
@@ -368,7 +368,6 @@ nav ul li a {
 #portfolio .projects .project i {
   font-size: 1.2rem;
 }
-
 
 #portfolio .projects .project i:nth-of-type(1) {
   position: absolute;
@@ -424,3 +423,51 @@ nav ul li a {
 }
 
 /* End Portfolio Rules */
+
+/* Start About Me Rules */
+
+#about-me {
+  margin-top: 50px;
+  color: white;
+  background: #238b68;
+}
+
+#about-me .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-me .container .info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+#about-me .container .info p {
+  line-height: 1.5rem;
+  position: relative;
+  padding-top: 20px;
+}
+
+#about-me .container .info p::before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+#about-me .container .image {
+  width: 50%;
+}
+
+svg{
+  width: 100%;
+}
+
+/* End About Me Rules */
