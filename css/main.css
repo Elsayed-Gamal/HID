@@ -1,0 +1,426 @@
+/* Start Glabal Rules */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* End Global Rules */
+
+/* Start Header Rules*/
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/4884785.jpg');
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: s;
+  align-items: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+nav {
+  color: white;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  padding: 10px;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: larger;
+  position: relative;
+  overflow: hidden;
+}
+
+nav ul li .li-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-95px);
+}
+
+nav ul li:nth-of-type(1) .li-overlay,
+nav ul li:nth-of-type(2) .li-overlay {
+  transform: translateX(-50px);
+}
+
+nav ul li:hover .li-overlay {
+  transform: translateX(0);
+  transition: transform 0.5s ease-out;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-info {
+  position: relative;
+  z-index: 1;
+  color: white;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.header-info h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.header-info p {
+  line-height: 1.7rem;
+  font-size: larger;
+}
+
+/* End Header Rules */
+
+/* Start Skills Rules*/
+
+#skills {
+  color: #333333;
+  margin-top: 50px;
+}
+
+#skills h1 {
+  text-align: center;
+}
+
+#skills .langs {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#skills .bar {
+  width: 2px;
+  height: 80%;
+  background: grey;
+}
+
+#skills .html {
+  position: absolute;
+  top: 7%;
+  width: 35vw;
+  transform: translateY(0);
+  transition: transform 0.5s ease-out;
+}
+
+#skills .html::after {
+  content: '';
+  position: absolute;
+  top: 50px;
+  right: -105px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #333333;
+}
+
+#skills .html::before {
+  content: '';
+  position: absolute;
+  top: 54px;
+  right: -105px;
+  width: 180px;
+  height: 2px;
+  background-color: #333333;
+}
+
+#skills .html h2 {
+  text-align: right;
+}
+
+#skills .html .progress-bar {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #333333;
+  border-radius: 20px;
+}
+
+#skills .html .progress-bar .progress {
+  width: 90%;
+  height: 100%;
+  background-color: #333333;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+#skills .css {
+  position: absolute;
+  top: 27%;
+  width: 35vw;
+  transform: translateY(0);
+  transition: transform 0.5s ease-out;
+}
+
+#skills .css::after {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: -104px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #333333;
+}
+
+#skills .css::before {
+  content: '';
+  position: absolute;
+  top: 54px;
+  left: -104px;
+  width: 180px;
+  height: 2px;
+  background-color: #333333;
+}
+
+#skills .css h2 {
+  text-align: left;
+}
+
+#skills .css .progress-bar {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #333333;
+  border-radius: 20px;
+}
+
+#skills .css .progress-bar .progress {
+  width: 80%;
+  height: 100%;
+  background-color: #333333;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+#skills .js {
+  position: absolute;
+  top: 50%;
+  width: 35vw;
+  transform: translateY(0);
+  transition: transform 0.5s ease-out;
+}
+
+#skills .js::after {
+  content: '';
+  position: absolute;
+  top: 50px;
+  right: -105px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #333333;
+}
+
+#skills .js::before {
+  content: '';
+  position: absolute;
+  top: 54px;
+  right: -105px;
+  width: 180px;
+  height: 2px;
+  background-color: #333333;
+}
+
+#skills .js h2 {
+  text-align: right;
+}
+
+#skills .js .progress-bar {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #333333;
+  border-radius: 20px;
+}
+
+#skills .js .progress-bar .progress {
+  width: 70%;
+  height: 100%;
+  background-color: #333333;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+#skills .html:hover,
+#skills .css:hover,
+#skills .js:hover {
+  color: #238b68;
+  transform: translateY(-20px);
+  transition: transform 0.5s ease-out;
+}
+
+#skills .html:hover .progress-bar,
+#skills .css:hover .progress-bar,
+#skills .js:hover .progress-bar {
+  border: 1px solid #238b68;
+}
+
+#skills .html:hover .progress-bar .progress,
+#skills .css:hover .progress-bar .progress,
+#skills .js:hover .progress-bar .progress,
+#skills .html:hover::after,
+#skills .html:hover::before,
+#skills .css:hover::after,
+#skills .css:hover::before,
+#skills .js:hover::after,
+#skills .js:hover::before {
+  background-color: #238b68;
+}
+
+/* End Skills Rules */
+
+/* Start Portfolio Rules */
+
+#portfolio {
+  margin-top: 50px;
+  background: #333333;
+  color: white;
+}
+
+#portfolio h1 {
+  text-align: center;
+  padding-top: 40px;
+}
+
+#portfolio .projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#portfolio .projects .project {
+  width: 30vw;
+  height: 300px;
+  padding: 5px;
+  border: 2px solid #238b68;
+  box-shadow: 1px 1px 10px #238b68;
+  margin-top: 20px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio .projects .project .overlay {
+  width: 100%;
+  height: 100%;
+  background: #238b68;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+#portfolio .projects .project h2 {
+  position: absolute;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+#portfolio .projects .project i {
+  font-size: 1.2rem;
+}
+
+
+#portfolio .projects .project i:nth-of-type(1) {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+#portfolio .projects .project span:nth-of-type(1) {
+  position: absolute;
+  bottom: 9px;
+  left: 35px;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+#portfolio .projects .project i:nth-of-type(2) {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+#portfolio .projects .project span:nth-of-type(2) {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+#portfolio .projects .project:hover .overlay {
+  opacity: 70%;
+  transition: opacity 0.5s ease-out;
+}
+
+#portfolio .projects .project:hover h2,
+#portfolio .projects .project:hover i,
+#portfolio .projects .project:hover span {
+  opacity: 100%;
+  transition: opacity 0.5s ease-out;
+}
+
+#portfolio .projects .project i:nth-of-type(2):hover {
+  color: red;
+}
+
+#portfolio .projects .project img {
+  width: 100%;
+  height: 100%;
+}
+
+/* End Portfolio Rules */
